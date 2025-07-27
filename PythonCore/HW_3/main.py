@@ -43,7 +43,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     Return:
     list of length quantity
     """
-    result_tickets = {}
+    result_tickets = set()
     try:
         if min < 1:
             return []
@@ -59,4 +59,5 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     return list(result_tickets)
     
    
-
+lottery_numbers = get_numbers_ticket(5,'10','50')
+print(lottery_numbers)
